@@ -1,12 +1,12 @@
 let mongoose = require('mongoose');
 
 // create a model class
-let contactSchema = mongoose.Schema({
-    software: String,
-    programmingLanguage: String,
+let favoriteSchema = mongoose.Schema({
+    name: String,
+    description: String,
 },
 {
-    collection: "first"
+    collection: "favorite-things"
 });
 
-module.exports = mongoose.model('test', contactSchema);
+module.exports = mongoose.model('favorite-things', favoriteSchema);
